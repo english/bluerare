@@ -1,0 +1,43 @@
+.contact-page
+  .page-content
+    %h1.heading
+      %span.corner.left
+      %span.content Contact
+      %span.corner.right
+
+    .row
+      .main
+        .map
+          %h2.title Find us
+          = partial :map
+
+        .contact
+          = form_for(@message, :url => '/messages',
+            :html => { :class => 'form-horizontal contact-form' }) do |f|
+            %fieldset
+              %legend Get in touch
+
+              = f.text_field :name, placeholder: 'John Smith',
+                :class => 'input-xlarge'
+              = f.email_field :email, placeholder: 'someone@example.com',
+                :class => 'input-xlarge'
+              = f.text_area :content, placeholder: 'Your message here...',
+                label: 'Message', rows: '13', :class => 'input-xlarge message'
+
+              .form-actions
+                = f.submit 'Send message', :class => 'btn btn-primary'
+
+      .sidebar
+        %h3.title Make your reservation now!
+        %ul.contact-methods
+          %li.contact-method.phone
+            %span.icon.icon-phone_dark
+            01228 524433
+
+          %li.contact-method.email
+            %span.icon.icon-email_dark
+            %a{:href => "mail_to:info@bluerare.co.uk"} info@bluerare.co.uk
+
+          %li.contact-method.address
+            %span.icon.icon-pin_dark
+            = partial :address
