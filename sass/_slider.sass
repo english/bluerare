@@ -1,0 +1,83 @@
+.slider
+  min-height: 100px
+  background: #2F2720 image-url('pattern.png') repeat left top
+  border-top: #0D0B08 1px solid
+
+  .container
+    width: 1024px
+    text-align: center
+
+div[role="main"] .container
+  position: relative
+
+#slider_arrow
+  position: absolute
+  margin: 0 0 0 -41px
+  top: -6px
+  left: 50%
+  height: 35px
+  width: 82px
+  cursor: pointer
+  z-index: 6
+  overflow: hidden
+  margin-bottom: 20px
+
+  .arrow_bit_top
+    height: 6px
+    width: 62px
+    position: absolute
+    top: 0px
+    left: 10px
+    background: #B00000 image-url('pattern_sharp.png') bottom
+
+  .arrow_bit_bottom
+    height: 26px
+    width: 54px
+    position: absolute
+    top: 0px
+    left: 14px
+    +border-radius(0 0 26px 26px)
+    +single-box-shadow(#888, 0px, 1px, 1px)
+    background: #B00000 image-url('pattern_sharp.png') top
+
+  .arrow_bit_left
+    height: 6px
+    width: 10px
+    position: absolute
+    top: 0px
+    left: 4px
+    +border-radius(10px 10px 0 0)
+    background: #B00000 image-url('pattern_sharp.png')
+
+  .arrow_bit_right
+    height: 6px
+    width: 10px
+    position: absolute
+    top: 0px
+    left: 4px
+    +border-radius(10px 10px 0 0)
+    background: #B00000 image-url('pattern_sharp.png')
+    left: 68px
+
+  .arrow_bit_middle
+    height: 12px
+    width: 22px
+    position: absolute
+    top: 5px
+    left: 30px
+
+  &.arrow_up .arrow_bit_middle
+    background: image-url('arrow_up.png') no-repeat
+
+  &.arrow_down .arrow_bit_middle
+    background: image-url('arrow_down.png') no-repeat
+    top: 7px
+
+.ornament
+  background: image-url('ornament.png') no-repeat
+  height: 20px
+  width: 157px
+  position: absolute
+  top: 23px
+  left: 50%
+  margin: 0 0 0 -79px

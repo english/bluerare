@@ -1,0 +1,30 @@
+!!! 5
+
+%html
+  %head
+    %title Bluerare Restaurant Carlisle
+    %link{:rel => "stylesheet", :href => "/stylesheets/screen.css"}
+    %script{:src => "/javascripts/libs/modernizr-2.5.3.min.js"}
+
+  %body
+    = partial :header
+    = partial :slider
+
+    %div(role="main")
+      .container
+        #slider_arrow{:class => slider_arrow_class}
+          .arrow_bit_bottom
+          .arrow_bit_top
+          .arrow_bit_left
+          .arrow_bit_right
+          .arrow_bit_middle
+        .ornament
+        .page-content
+          = yield
+
+    = partial :footer
+
+    %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"}
+    :javascript
+      window.jQuery || document.write("<script src='/javascripts/libs/jquery-1.7.2.min.js'>\x3C/script>");
+    %script{:src => "javascripts/script.js"}

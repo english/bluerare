@@ -1,0 +1,28 @@
+footer
+  color: #999
+  +single-text-shadow(#000, 0px, -1px, 0px)
+
+  a
+    +link-colors(#bbb, #bbb, #bbb, #bbb, #bbb)
+
+  .container
+    background: #191919 image-url('footer_bg.png') repeat-x
+    border: #191919 1px solid
+    width: $ninesixty-grid-width - 2
+    overflow: hidden
+
+  .columns
+    border: #555 1px solid
+    padding: 20px 0
+    +clearfix
+
+  .column
+    +grid-prefix(1)
+    +grid(4)
+
+  .title
+    color: #fff
+    font-weight: normal
+    font-size: 22px
+    margin: 0 0 15px
+    border-bottom: none

@@ -1,0 +1,53 @@
+@import base
+
++normalize
+
+@import bootstrap/variables
+@import bootstrap/mixins
+@import bootstrap/forms
+@import bootstrap/wells
+@import bootstrap/buttons
+
++all-icon-sprites
+
+.container
+  +grid-container
+
+  >.page-content
+    padding-top: 60px
+
+header, div[role="main"], footer
+  clear: left
+
+div[role="main"]
+  background: image-url('container_bg.png') left top repeat-x
+  min-height: 120px
+
+.title
+  margin-top: 0
+
+@each $tag in h1, h2, h3, h4
+  #{$tag}.title
+    @extend legend
+    font-weight: normal
+
+.clear
+  clear: both
+
+.more
+  border: 1px solid #580000
+  +single-text-shadow(#2C0000, 0px, -1px, 0px)
+  background: #B00000 image-url('pattern8.png')
+  color: #fff
+  padding: 8px 15px
+  font-size: 14px
+  text-decoration: none
+
+@import header
+@import heading
+@import menu
+@import footer
+@import contact_methods
+@import slider
+@import home
+@import contact

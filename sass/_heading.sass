@@ -1,0 +1,31 @@
+.corner
+  display: block
+  width: 0
+  height: 0
+  float: left
+  border:
+    color: transparent
+    style: solid
+    width: 5px
+
+  &.left
+    border-color: transparent #580000 #580000 transparent
+
+  &.right
+    border-color: transparent transparent #580000 #580000
+
+.heading
+  +clearfix
+  margin: 0 auto
+  width: 201px
+  text-align: center
+  font-weight: normal
+
+  >.content
+    float: left
+    +single-text-shadow(#2C0000, 0px, -1px, 0px)
+    color: #fff
+    background: #b00000 image-url('pattern8.png')
+    border: 1px solid #BC2626
+    padding: 10px 0
+    width: 179px

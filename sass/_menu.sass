@@ -1,0 +1,66 @@
+.menu
+  clear: left
+  width: 960px + 14 + 14
+  position: absolute
+  left: -14px
+  bottom: -30px
+  z-index: 2
+
+  .corner
+    display: block
+    width: 0
+    height: 0
+    border:
+      style: solid
+      width: 7px
+      top-color: transparent
+
+  .corner.left
+    float: left
+    border:
+      right-color: #580000
+      bottom-color: #580000
+      left-color: transparent
+
+  .corner.right
+    float: left
+    border:
+      right-color: transparent
+      bottom-color: #580000
+      left-color: #580000
+
+  .links
+    +horizontal-list
+    float: left
+    margin: 0
+    padding: 0 20px
+    width: 958px - 40px
+    height: 43px
+    line-height: 43px
+    border: 1px solid #bc2626
+    border-top: none
+    background: #B00000 image-url('menu_pattern.png') repeat-x left top
+
+  .stars
+    display: block
+    +icon-sprite(stars)
+    width: 61px
+    height: 13px
+    float: left
+    margin-top: 15px
+
+  .stars.first
+    margin-right: 30px
+
+  .stars.last
+    float: right
+
+  a
+    +link-colors(#fff, #fff, #fff, #fff, #fff)
+    display: block
+    text-decoration: none
+    padding: 0 10px
+
+    &:hover
+      background-color: #fff
+      color: #b00000

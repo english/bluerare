@@ -1,0 +1,25 @@
+%footer
+  .container
+    .columns
+      %section.column.location
+        %h4.title Our Location
+        .map
+          %iframe{:frameborder => "0", :height => "300", :marginheight => "0",
+            :marginwidth => "0", :scrolling => "no", :width => "300",
+            :src => "https://maps.google.co.uk/maps?f=q&source=s_q&hl=en&geocode=&q=Bluerare+Restaurant,+Carlisle&aq=0&oq=bluerare+resta&sll=53.800651,-4.064941&sspn=10.274968,18.632813&ie=UTF8&hq=Bluerare+Restaurant,&hnear=Carlisle,+Cumbria,+United+Kingdom&t=m&cid=15614318802533962975&ll=54.872014,-2.895584&spn=0.014816,0.025749&z=14&output=embed&iwloc=near"}
+          %br/
+          %small
+            %a{:href => "https://maps.google.co.uk/maps?f=q&source=embed&hl=en&geocode=&q=Bluerare+Restaurant,+Carlisle&aq=0&oq=bluerare+resta&sll=53.800651,-4.064941&sspn=10.274968,18.632813&ie=UTF8&hq=Bluerare+Restaurant,&hnear=Carlisle,+Cumbria,+United+Kingdom&t=m&cid=15614318802533962975&ll=54.872014,-2.895584&spn=0.014816,0.025749&z=14"} View Larger Map
+
+      %section.column.contact
+        %h4.title Contact Us
+        %ul.contact-methods
+          %li.contact-method.phone
+            %span.icon.icon-phone
+            01228 524433
+          %li.contact-method.email
+            %span.icon.icon-email
+            %a{:href => "mailto:info@bluerare.co.uk"} info@bluerare.co.uk
+          %li.contact-method.address
+            %span.icon.icon-pin
+            = partial :address

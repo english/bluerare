@@ -1,0 +1,16 @@
+%header
+  .container
+    %hgroup
+      - if is_home?
+        %h1.logo
+          %a{:href => "/", :title => "Home"}
+            %img{:src => "/images/logo.png",
+                 :alt => "Bluerare Restaurant. HOME COOKING AT ITS BEST"}
+        %h2.tagline Bluerare Restaurant, Carlisle - Home cooking at its best
+      - else
+        %h3.logo
+          %a{:href => "/", :title => "Home"}
+            %img{:src => "/images/logo.png",
+                 :alt => "Bluerare Restaurant. HOME COOKING AT ITS BEST"}
+        %h4.tagline Bluerare Restaurant, Carlisle - Home cooking at its best
+    = partial :menu
