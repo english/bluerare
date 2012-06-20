@@ -1,5 +1,6 @@
 require 'bundler'
-Bundler.require
+Bundler.require :default
 
 require './app'
+
 run App

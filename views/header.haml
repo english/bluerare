@@ -1,4 +1,8 @@
 %header
+  - if @email_sent
+    .alert.alert-success
+      %p Thank you for your message
+
   .container
     %hgroup
       - if is_home?

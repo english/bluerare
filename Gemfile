@@ -2,9 +2,10 @@ source :rubygems
 
 gem "thin"
 gem "sinatra", :require => "sinatra/base"
-gem "haml"
+gem "haml", :require => false
 gem "mail"
-gem "padrino-helpers", :require => false
+gem "padrino-helpers", "~> 0.10.0"
+gem "activemodel", :require => "active_model"
 
 group :assets do
   gem "compass"
@@ -16,4 +17,8 @@ end
 group :test do
   gem "cucumber"
   gem "capybara"
+  gem "launchy"
+  gem "minitest"
+  gem "guard-minitest"
+  gem "libnotify"
 end

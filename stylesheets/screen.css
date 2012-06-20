@@ -1,0 +1,92 @@
+/*
+Syntax error: File to import not found or unreadable: 960/grid.
+              Load paths:
+                /home/jamie/sites/sinatra-bluerare/sass
+                /home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/frameworks/blueprint/stylesheets
+                /home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/frameworks/compass/stylesheets
+                /home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.3.1/vendor/assets/stylesheets
+                Compass::SpriteImporter
+        on line 1 of /home/jamie/sites/sinatra-bluerare/sass/_base.sass
+        from line 1 of /home/jamie/sites/sinatra-bluerare/sass/screen.sass
+
+1: /home/jamie/sites/sinatra-bluerare/sass/screen.sass
+
+Backtrace:
+/home/jamie/sites/sinatra-bluerare/sass/_base.sass:1
+/home/jamie/sites/sinatra-bluerare/sass/screen.sass:1
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/import_node.rb:64:in `rescue in import'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/import_node.rb:42:in `import'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/import_node.rb:25:in `imported_file'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/perform.rb:149:in `rescue in visit_import'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/perform.rb:154:in `visit_import'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/perform.rb:146:in `block in visit_import'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/perform.rb:146:in `map'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/perform.rb:146:in `visit_import'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/base.rb:53:in `map'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/perform.rb:47:in `visit_root'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/tree/root_node.rb:20:in `render'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/engine.rb:300:in `_render'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.19/lib/sass/engine.rb:247:in `render'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/lib/compass/compiler.rb:126:in `timed'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/lib/compass/compiler.rb:139:in `block in compile'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/lib/compass/logger.rb:45:in `red'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/lib/compass/compiler.rb:138:in `compile'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/lib/compass/compiler.rb:118:in `compile_if_required'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/lib/compass/compiler.rb:103:in `block (2 levels) in run'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/lib/compass/compiler.rb:101:in `each'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/lib/compass/compiler.rb:101:in `block in run'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/lib/compass/compiler.rb:126:in `timed'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/lib/compass/compiler.rb:100:in `run'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/lib/compass/commands/watch_project.rb:147:in `recompile'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `call'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/path.rb:31:in `create'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/state/directory.rb:26:in `block in created'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/state/directory.rb:25:in `each'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/state/directory.rb:25:in `created'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/state/directory.rb:17:in `refresh'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/backends/inotify.rb:12:in `block in add_handler'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/rb-inotify-0.8.8/lib/rb-inotify/notifier.rb:200:in `call'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/rb-inotify-0.8.8/lib/rb-inotify/notifier.rb:200:in `block in watch'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/rb-inotify-0.8.8/lib/rb-inotify/watcher.rb:41:in `[]'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/rb-inotify-0.8.8/lib/rb-inotify/watcher.rb:41:in `callback!'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/rb-inotify-0.8.8/lib/rb-inotify/event.rb:128:in `callback!'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/rb-inotify-0.8.8/lib/rb-inotify/notifier.rb:233:in `block in process'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/rb-inotify-0.8.8/lib/rb-inotify/notifier.rb:233:in `each'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/rb-inotify-0.8.8/lib/rb-inotify/notifier.rb:233:in `process'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/rb-inotify-0.8.8/lib/rb-inotify/notifier.rb:216:in `run'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/backends/inotify.rb:20:in `run'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/lib/compass/commands/watch_project.rb:87:in `perform'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/lib/compass/commands/base.rb:18:in `execute'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/lib/compass/commands/project_base.rb:19:in `execute'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/bin/compass:29:in `block in <top (required)>'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/bin/compass:43:in `call'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/bin/compass:43:in `<top (required)>'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/bin/compass:19:in `load'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194/bin/compass:19:in `<main>'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194@global/bin/ruby_bundler_wrapper:23:in `eval'
+/home/jamie/.rvm/gems/ruby-1.9.3-p194@global/bin/ruby_bundler_wrapper:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: 960/grid.\A               Load paths:\A                 /home/jamie/sites/sinatra-bluerare/sass\A                 /home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/frameworks/blueprint/stylesheets\A                 /home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/frameworks/compass/stylesheets\A                 /home/jamie/.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.3.1/vendor/assets/stylesheets\A                 Compass::SpriteImporter\A         on line 1 of /home/jamie/sites/sinatra-bluerare/sass/_base.sass\A         from line 1 of /home/jamie/sites/sinatra-bluerare/sass/screen.sass\A \A 1: /home/jamie/sites/sinatra-bluerare/sass/screen.sass"; }

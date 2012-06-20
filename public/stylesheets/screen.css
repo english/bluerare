@@ -1395,6 +1395,69 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
   *padding-bottom: 1px;
 }
 
+/* line 5, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.3.1/vendor/assets/stylesheets/bootstrap/_alerts.scss */
+.alert {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 18px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: #c09853;
+}
+
+/* line 14, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.3.1/vendor/assets/stylesheets/bootstrap/_alerts.scss */
+.alert-heading {
+  color: inherit;
+}
+
+/* line 19, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.3.1/vendor/assets/stylesheets/bootstrap/_alerts.scss */
+.alert .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  line-height: 18px;
+}
+
+/* line 29, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.3.1/vendor/assets/stylesheets/bootstrap/_alerts.scss */
+.alert-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+}
+
+/* line 34, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.3.1/vendor/assets/stylesheets/bootstrap/_alerts.scss */
+.alert-danger, .alert-error {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+}
+
+/* line 39, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.3.1/vendor/assets/stylesheets/bootstrap/_alerts.scss */
+.alert-info {
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  color: #3a87ad;
+}
+
+/* line 47, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.3.1/vendor/assets/stylesheets/bootstrap/_alerts.scss */
+.alert-block {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+/* line 51, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.3.1/vendor/assets/stylesheets/bootstrap/_alerts.scss */
+.alert-block > p, .alert-block > ul {
+  margin-bottom: 0;
+}
+
+/* line 54, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.3.1/vendor/assets/stylesheets/bootstrap/_alerts.scss */
+.alert-block p + p {
+  margin-top: 5px;
+}
+
 /* line 60, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-email {
   background-position: 0 -133px;
@@ -1430,59 +1493,59 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
   background-position: 0 0;
 }
 
-/* line 13, ../../sass/screen.sass */
+/* line 14, ../../sass/screen.sass */
 .container {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
 }
-/* line 16, ../../sass/screen.sass */
+/* line 17, ../../sass/screen.sass */
 .container > .page-content {
   padding-top: 60px;
 }
 
-/* line 19, ../../sass/screen.sass */
+/* line 20, ../../sass/screen.sass */
 header, div[role="main"], footer {
   clear: left;
 }
 
-/* line 22, ../../sass/screen.sass */
+/* line 23, ../../sass/screen.sass */
 div[role="main"] {
   background: url('/images/container_bg.png?1340046686') left top repeat-x;
   min-height: 120px;
 }
 
-/* line 26, ../../sass/screen.sass */
+/* line 27, ../../sass/screen.sass */
 .title {
   margin-top: 0;
 }
 
-/* line 30, ../../sass/screen.sass */
+/* line 31, ../../sass/screen.sass */
 h1.title {
   font-weight: normal;
 }
 
-/* line 30, ../../sass/screen.sass */
+/* line 31, ../../sass/screen.sass */
 h2.title {
   font-weight: normal;
 }
 
-/* line 30, ../../sass/screen.sass */
+/* line 31, ../../sass/screen.sass */
 h3.title {
   font-weight: normal;
 }
 
-/* line 30, ../../sass/screen.sass */
+/* line 31, ../../sass/screen.sass */
 h4.title {
   font-weight: normal;
 }
 
-/* line 34, ../../sass/screen.sass */
+/* line 35, ../../sass/screen.sass */
 .clear {
   clear: both;
 }
 
-/* line 37, ../../sass/screen.sass */
+/* line 38, ../../sass/screen.sass */
 .more {
   border: 1px solid #580000;
   text-shadow: #2c0000 0px -1px 0px;
@@ -1499,13 +1562,18 @@ header {
   color: white;
 }
 /* line 5, ../../sass/_header.sass */
+header .alert {
+  margin-bottom: 0;
+  text-align: center;
+}
+/* line 9, ../../sass/_header.sass */
 header .container {
   height: 161px;
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 12, ../../sass/_header.sass */
+/* line 16, ../../sass/_header.sass */
 header .logo {
   display: inline;
   float: left;
@@ -1517,7 +1585,7 @@ header .logo {
   margin-bottom: 0;
 }
 
-/* line 19, ../../sass/_header.sass */
+/* line 23, ../../sass/_header.sass */
 .tagline {
   display: inline;
   float: left;

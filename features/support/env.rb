@@ -1,11 +1,18 @@
 require 'sinatra/base'
-require_relative '../../app.rb'
 require 'mail'
-require 'capybara/cucumber'
+require 'active_model'
+require 'padrino-helpers'
 
+require_relative '../../app'
+
+require 'capybara/cucumber'
+require 'minitest/unit'
+
+Capybara.app = App
 Sinatra::Application.set :environment, :test
-Capybara.app = Sinatra::Application
 
 Mail.defaults do
   delivery_method :test
 end
+
+World(MiniTest::Assertions)

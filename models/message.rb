@@ -3,7 +3,7 @@ class Message
 
   validates_presence_of :name, :email, :content
 
-  validates_format_of :email, :message => "Invalid email address",
+  validates_format_of :email,
     :with => /\A[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]+\z/
 
   attr_accessor :name, :email, :content

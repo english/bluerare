@@ -1,12 +1,9 @@
-require 'padrino-helpers'
 require_relative 'models/message'
 
 class App < Sinatra::Base
   register Padrino::Helpers
 
   helpers do
-    include Padrino::Helpers::TagHelpers
-
     def partial template
       haml template, :layout => false
     end
@@ -60,11 +57,21 @@ class App < Sinatra::Base
   end
 
   get "/" do
+    @email_sent = params[:email] == "success"
     haml :home
   end
 
   get "/messages/new" do
     @message = Message.new
     haml :contact
+  end
+
+  post "/messages" do
+    @message = Message.new params[:message]
+    if @message.valid?
+      redirect "/?email=success"
+    else
+      haml :contact
+    end
   end
 end

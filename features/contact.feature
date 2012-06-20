@@ -19,7 +19,7 @@ Feature: Contact Form
       | Name    | |
       | Email   | john.smith.example.com |
       | Message | |
-    Then I should see "Invalid email"
-    And I should see "Name required"
-    And I should see "Message required"
+    Then I should see "Email is invalid"
+    And I should see "Name can't be blank"
+    And I should see "Content can't be blank"
     And no emails should have been sent

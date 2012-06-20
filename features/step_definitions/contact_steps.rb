@@ -11,5 +11,5 @@ When /^I complete the contact form with the following values:$/ do |table|
 end
 
 Then /^I should see "(.*?)"$/ do |content|
-  page.should have_content(content)
+  assert page.has_content?(content)
 end

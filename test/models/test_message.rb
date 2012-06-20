@@ -28,8 +28,6 @@ class MessageTest < Minitest::Unit::TestCase
 
     subject.email = "someone.example.com"
     refute subject.valid?
-    assert subject.errors[:email].include?("Invalid email address"),
-      "Expected 'Invalid email address', got: #{subject.errors[:email].inspect}"
   end
 
   def test_content_required

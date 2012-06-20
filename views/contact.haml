@@ -12,17 +12,20 @@
           = partial :map
 
         .contact
-          = form_for(@message, :url => '/messages',
-            :html => { :class => 'form-horizontal contact-form' }) do |f|
+          = form_for @message, "/messages", :class => 'form-horizontal contact-form' do |f|
             %fieldset
               %legend Get in touch
 
-              = f.text_field :name, placeholder: 'John Smith',
-                :class => 'input-xlarge'
-              = f.email_field :email, placeholder: 'someone@example.com',
-                :class => 'input-xlarge'
-              = f.text_area :content, placeholder: 'Your message here...',
-                label: 'Message', rows: '13', :class => 'input-xlarge message'
+              = f.error_messages
+
+              = f.label :name
+              = f.text_field :name, :placeholder => 'John Smith', :class => 'input-xlarge'
+
+              = f.label :email
+              = f.email_field :email, :placeholder => 'someone@example.com', :class => 'input-xlarge'
+
+              = f.label :message
+              = f.text_area :content, :placeholder => 'Your message here...', :rows => '13', :class => 'input-xlarge message', :id => "Message"
 
               .form-actions
                 = f.submit 'Send message', :class => 'btn btn-primary'
