@@ -6,9 +6,9 @@ require_relative '../../models/message'
 
 class MessageTest < Minitest::Unit::TestCase
   def subject
-    @message ||= Message.new(:name => "John Smith",
+    @message ||= Message.new :name => "John Smith",
                              :email => "john@example.com",
-                             :content => "Bla bla bla")
+                             :content => "Bla bla bla"
   end
 
   def test_name_required

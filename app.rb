@@ -1,4 +1,5 @@
 require_relative 'models/message'
+require_relative 'models/contact_form_email'
 
 class App < Sinatra::Base
   register Padrino::Helpers
@@ -69,6 +70,8 @@ class App < Sinatra::Base
   post "/messages" do
     @message = Message.new params[:message]
     if @message.valid?
+      Mail.deliver ContactFormEmail.new(@message).to_hash
+
       redirect "/?email=success"
     else
       haml :contact

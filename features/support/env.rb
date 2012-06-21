@@ -15,4 +15,8 @@ Mail.defaults do
   delivery_method :test
 end
 
+Before do
+  Mail::TestMailer.deliveries.clear
+end
+
 World(MiniTest::Assertions)

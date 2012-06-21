@@ -9,9 +9,9 @@ Feature: Contact Form
     And the following email should be sent:
       | from     | no-reply@bluerare.co.uk     |
       | to       | contact-form@bluerare.co.uk |
-      | reply-to | john.smith@example.com      |
+      | reply_to | john.smith@example.com      |
       | subject  | New contact form message from John Smith |
-      | content  | John Smith <john.smith@example.com> has completed the contact from with: Test message content. |
+      | body     | John Smith <john.smith@example.com> has completed the contact form with: Test message content |
 
   Scenario: Invalid message
     Given I am on the contact page
