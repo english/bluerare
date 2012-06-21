@@ -20,5 +20,6 @@ group :test do
   gem "launchy"
   gem "minitest"
   gem "guard-minitest"
+  gem "guard-cucumber"
   gem "libnotify"
 end
