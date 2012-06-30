@@ -7,11 +7,12 @@ gem "mail"
 gem "padrino-helpers", "~> 0.10.0"
 gem "activemodel", :require => "active_model"
 
-group :assets do
+group :development do
   gem "compass"
   gem "compass-960-plugin"
   gem "compass-normalize-plugin"
   gem "bootstrap-sass"
+  gem "guard-rack"
 end
 
 group :test do
@@ -22,8 +23,4 @@ group :test do
   gem "guard-minitest"
   gem "guard-cucumber"
   gem "libnotify"
-end
-
-group :development do
-  gem "guard-rack"
 end
