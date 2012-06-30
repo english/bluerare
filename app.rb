@@ -4,6 +4,27 @@ require_relative 'models/contact_form_email'
 class App < Sinatra::Base
   register Padrino::Helpers
 
+  get "/" do
+    @email_sent = params[:email] == "success"
+    haml :home
+  end
+
+  get "/messages/new" do
+    @message = Message.new
+    haml :contact
+  end
+
+  post "/messages" do
+    @message = Message.new params[:message]
+    if @message.valid?
+      Mail.deliver ContactFormEmail.new(@message).to_hash
+
+      redirect "/?email=success"
+    else
+      haml :contact
+    end
+  end
+
   helpers do
     def partial template
       haml template, :layout => false
@@ -54,27 +75,6 @@ class App < Sinatra::Base
       }
 
       content_tag :iframe, nil, defaults.merge(options)
-    end
-  end
-
-  get "/" do
-    @email_sent = params[:email] == "success"
-    haml :home
-  end
-
-  get "/messages/new" do
-    @message = Message.new
-    haml :contact
-  end
-
-  post "/messages" do
-    @message = Message.new params[:message]
-    if @message.valid?
-      Mail.deliver ContactFormEmail.new(@message).to_hash
-
-      redirect "/?email=success"
-    else
-      haml :contact
     end
   end
 end
