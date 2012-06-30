@@ -1,5 +1,6 @@
 source :rubygems
 
+gem "thin"
 gem "sinatra", :require => "sinatra/base"
 gem "haml", :require => false
 gem "mail"
@@ -7,7 +8,6 @@ gem "padrino-helpers", "~> 0.10.0"
 gem "activemodel", :require => "active_model"
 
 group :development do
-  gem "thin"
   gem "compass"
   gem "compass-960-plugin"
   gem "compass-normalize-plugin"
