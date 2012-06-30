@@ -1,6 +1,17 @@
 require_relative 'models/message'
 require_relative 'models/contact_form_email'
 
+Mail.defaults do
+  delivery_method :smtp, { 
+    :address => 'smtp.gmail.com',
+    :port => '587',
+    :user_name => ENV['GMAIL_SMTP_USER'],
+    :password => ENV['GMAIL_SMTP_PASSWORD'],
+    :authentication => :plain,
+    :enable_starttls_auto => true
+  }
+end
+
 class App < Sinatra::Base
   register Padrino::Helpers
 
@@ -17,7 +28,7 @@ class App < Sinatra::Base
   post "/messages" do
     @message = Message.new params[:message]
     if @message.valid?
-      Mail.deliver ContactFormEmail.new(@message).to_hash
+      Mail.deliver ContactFormEmail.new(@message, settings.environment).to_hash
 
       redirect "/?email=success"
     else

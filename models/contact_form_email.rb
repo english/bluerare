@@ -1,6 +1,6 @@
 class ContactFormEmail
-  def initialize msg
-    @msg = msg
+  def initialize msg, env=:production
+    @msg, @env = msg, env
   end
 
   def from
@@ -8,7 +8,11 @@ class ContactFormEmail
   end
 
   def to
-    "contact-form@bluerare.co.uk"
+    if @env == :development
+      "jamienglish@gmail.com"
+    else
+      "contact-form@bluerare.co.uk"
+    end
   end
 
   def reply_to

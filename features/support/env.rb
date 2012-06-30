@@ -9,7 +9,7 @@ require 'capybara/cucumber'
 require 'minitest/unit'
 
 Capybara.app = App
-Sinatra::Application.set :environment, :test
+App.set :environment, :test
 
 Mail.defaults do
   delivery_method :test

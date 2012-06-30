@@ -5,10 +5,13 @@ require 'ostruct'
 require_relative '../../models/contact_form_email'
 
 class ContactFormEmailTest < Minitest::Unit::TestCase
+  def msg
+    OpenStruct.new :name => "John Smith",
+                   :email => "john@example.com",
+                   :content => "Bla bla bla"
+  end
+
   def subject
-    msg = OpenStruct.new :name => "John Smith",
-                         :email => "john@example.com",
-                         :content => "Bla bla bla"
     @subject ||= ContactFormEmail.new(msg).to_hash
   end
 
@@ -30,5 +33,10 @@ class ContactFormEmailTest < Minitest::Unit::TestCase
 
   def test_body
     assert_equal "John Smith <john@example.com> has completed the contact form with: Bla bla bla", subject[:body]
+  end
+
+  def test_dev_env
+    subject = ContactFormEmail.new(msg, :development).to_hash
+    assert_equal "jamienglish@gmail.com", subject[:to]
   end
 end
