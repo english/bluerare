@@ -23,3 +23,7 @@ group :test do
   gem "guard-cucumber"
   gem "libnotify"
 end
+
+group :development do
+  gem "guard-rack"
+end
