@@ -1,0 +1,23 @@
+= form_for @message, "/messages", :class => 'form-horizontal contact-form' do |f|
+  %fieldset
+    %legend Get in touch
+
+    = f.error_messages
+
+    .control-group.string.required
+      = f.label :name, :class => "string required control-label"
+      .controls
+        = f.text_field :name, :placeholder => 'John Smith', :class => 'input-xlarge'
+
+    .control-group.email.required
+      = f.label :email, :class => "email required control-label"
+      .controls
+        = f.email_field :email, :placeholder => 'someone@example.com', :class => 'input-xlarge'
+
+    .control-group.text.required
+      = f.label :message, :class => "text required control-label"
+      .controls
+        = f.text_area :content, :placeholder => 'Your message here...', :rows => '13', :class => 'input-xlarge message', :id => "Message"
+
+    .form-actions
+      = f.submit 'Send message', :class => 'btn btn-primary'
